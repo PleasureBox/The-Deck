@@ -18,13 +18,20 @@ body{
   position: absolute;
   width: 200px;
   height: 330px;
-  text-align: justify;
+  text-align: center;
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
   transition: 0.5s;
   left: calc(50% - 120px);
   top: 0;
+}
+.item img {
+  max-width: 200%;
+  max-height: 200%;
+  margin-left: -65px;
+  user-select: none;
+  pointer-events: none;
 }
 #next{
   position: absolute;
@@ -50,7 +57,7 @@ body{
 #prev:hover,
 #next:hover{
   opacity: 1;
-  color: white;
+  color: #fff;
 }
 
 .shuffle-button-container {
