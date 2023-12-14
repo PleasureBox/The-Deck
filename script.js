@@ -23,6 +23,9 @@ function loadShow(){
         items[i].style.filter = 'blur(5px)';
         items[i].style.opacity = stt > 2 ? 0 : 0.6;
     }
+    // Hide/show prev and next buttons based on active index
+    document.getElementById('prev').style.display = active === 0 ? 'none' : 'block';
+    document.getElementById('next').style.display = active === items.length - 1 ? 'none' : 'block';
 }
 loadShow();
 
@@ -88,8 +91,7 @@ slider.addEventListener('mouseup', (e) => {
 });
 
 function pickRandomCard() {
-    const cardTotal = 10
-    const randomIndex = Math.ceil(Math.random() * cardTotal);
+    const randomIndex = Math.floor(Math.random() * items.length);
     const targetIndex = randomIndex;
     const direction = targetIndex > active ? 1 : -1;
 
