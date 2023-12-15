@@ -62,21 +62,22 @@ body{
 
 .shuffle-button-container {
   position: absolute;
-  left: calc(50% - 90px);
+  left: calc(50% - 55px);
   bottom: 0px;
 }
 
 #pickRandomCard {
-  font-size: 1em;
+  font-size: 1.1em;
   cursor: pointer;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-  transition: 0.5s;
+  background-color: white;
+  color: #3498db;
+  border: 3px solid #3498db;
+  border-radius: 5px;
+  padding: 6px 12px;
+  transition: 0.4s;
 }
 
 #pickRandomCard:hover {
-  background-color: #2980b9;
+  color: white;
+  background-color: #3498db;
 }
